@@ -1,0 +1,99 @@
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+
+}
+
+#nav {
+    display: inline-block;
+}
+#header {
+    background-color: black;
+    height: 46px;
+    line-height: 46px;
+}
+
+#nav, .subnav{
+    list-style-type: none; /* bỏ dấu chấm ở các list */
+}
+
+#nav > li{
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
+#nav > li > a {
+    color: white;
+    text-transform: uppercase; /* viết in hoa các chữ */
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    display: block;
+    padding: 0 24px;
+}
+
+#nav .subnav li:hover a, 
+#nav > li:hover > a{
+    color: #000;
+    background-color: #ccc;
+    line-height: 38px;
+}
+
+#nav .subnav a{
+    color: black;
+    padding: 0 12px;
+}
+
+#nav li:hover .subnav{
+    display: block; /* kế thừa hết chiều ngang*/
+}
+#nav .subnav {
+    /* display: none; */
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0 ,0 ,0.3);
+}
+
+#header .search-btn{
+    color: #fff;
+    font-size: 20px;
+    float: right;/* mất tính kế thừa chiều ngang*/
+    line-height: 46px;
+    padding: 0 21px;
+}
+#header .search-btn:hover{
+    background-color: #f44336;
+    /* di vào ra biểu tượng bàn tay ( dùng cho những thứ có thể click )*/
+    cursor: pointer;
+}
+#slider {
+    background-color: #fff;
+    min-height: 500px;
+}
+
+#content {
+
+}
+
+#footer {
+
+}
